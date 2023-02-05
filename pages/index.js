@@ -84,7 +84,7 @@ export default function Home({ portfolio }) {
           }}
         />
       </div>
-      <Image src="/mv.jpg" width={1280} height={500} quality={100} className="fixed top-0 left-0 block min-h-screen min-w-full z-10" alt="mv" />
+      <Image src="/mv.jpg" width={1280} height={500} quality={100} className="fixed top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 block min-w-min min-h-screen w-screen h-screen z-10" alt="mv" />
     </Layout>
   )
 }
