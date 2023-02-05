@@ -14,23 +14,23 @@ export default function Header () {
 				<nav className="text-lg">
 					<ul className="flex">
 						<li>
-							<Link href="/" className="inline-block p-2 text-white tracking-wide duration-75 hover:text-pink-500">
+							<Link href="/profile" className="inline-block p-2 text-white tracking-wide duration-75 hover:text-pink-500">
 								PROFILE
 							</Link>
 						</li>
 						<li className="ml-5">
-							<Link href="/" className="inline-block p-2 text-white tracking-wide duration-75 hover:text-pink-500">
+							<Link href="/works" className="inline-block p-2 text-white tracking-wide duration-75 hover:text-pink-500">
 								WORKS
 							</Link>
 						</li>
 						<li className="ml-5">
-							<Link href="/" className="inline-block p-2 text-white tracking-wide duration-75 hover:text-pink-500">
-								SKILL
-							</Link>
+							<a href="https://www.yupro.tech/" target="_blank" rel="noopener" className="inline-block p-2 text-white tracking-wide duration-75 hover:text-pink-500">
+								BLOG
+							</a>
 						</li>
 						<li className="ml-5">
-							<a href="https://www.yupro.tech/" target="_blank" rel="noopener" className="inline-block p-2 text-white tracking-wide duration-75 hover:text-pink-500">
-								Blog
+							<a href="https://www.yupro.tech/contact/" target="_blank" rel="noopener" className="inline-block p-2 text-white tracking-wide duration-75 hover:text-pink-500">
+								CONTACT
 							</a>
 						</li>
 					</ul>
