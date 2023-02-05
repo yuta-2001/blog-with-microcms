@@ -22,8 +22,8 @@ export default function Home({ portfolio }) {
     <Layout>
       <div className="w-screen h-screen  text-white relative z-20 bg-black bg-opacity-30">
         <h2 className="text-center absolute top-1/2 left-1/2  w-full -translate-y-2/4 -translate-x-2/4 z-20">
-          <span className="font-serif tracking-widest font-bold text-7xl mb-6 inline-block">Yuta Sugimine</span><br />
-          <span className="font-mono text-xl inlin-block tracking-widest font-bold">It is a self-introduction site of a university student enginner.</span>
+          <span className="font-serif tracking-widest font-bold text-5xl md:text-7xl mb-6 inline-block">Yuta <br className="block md:hidden" /> Sugimine</span><br />
+          <span className="font-mono text-lg md:text-lg inlin-block md:tracking-widest font-bold">It is a self-introduction site <br className="block md:hidden" /> of a university student enginner.</span>
         </h2>
         <Fireworks
           options={{
@@ -84,7 +84,7 @@ export default function Home({ portfolio }) {
           }}
         />
       </div>
-      <Image src="/mv.jpg" width={1280} height={500} quality={100} className="fixed top-0 left-0 block w-full h-full z-10" alt="mv" />
+      <Image src="/mv.jpg" width={1280} height={500} quality={100} className="fixed top-0 left-0 block min-h-screen min-w-full z-10" alt="mv" />
     </Layout>
   )
 }
