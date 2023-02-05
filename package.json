@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fireworks-js/react": "^2.10.1",
     "@next/font": "13.1.6",
     "microcms-js-sdk": "^2.3.2",
     "next": "13.1.6",
