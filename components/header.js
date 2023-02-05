@@ -4,25 +4,25 @@ import Image from "next/image";
 
 export default function Header () {
 	return (
-		<header>
-			<div>
-				<Link href="/">
-					<Image src="/MINETECH.png" width={150} height={150} alt="logo" />
+		<header className="fixed w-full top-0 left-0">
+			<div className="container w-4/5 mx-auto flex items-center">
+				<Link href="/" className="w-40 h-40 mr-auto">
+					<Image src="/MINETECH.png" width={150} height={150} alt="logo" className="block w-full h-full" />
 				</Link>
-				<nav>
-					<ul>
-						<li>
-							<Link href="/">
+				<nav className="text-lg">
+					<ul className="flex">
+						<li className="inline-block">
+							<Link href="/" className="inline-block p-2">
 								WORKS
 							</Link>
 						</li>
-						<li>
-							<Link href="/">
+						<li className="ml-3">
+							<Link href="/" className="inline-block p-2">
 								SKILL
 							</Link>
 						</li>
-						<li>
-							<a href="https://www.yupro.tech/" target="_blank" rel="noopener">
+						<li className="ml-3">
+							<a href="https://www.yupro.tech/" target="_blank" rel="noopener" className="inline-block p-2">
 								Blog
 							</a>
 						</li>
