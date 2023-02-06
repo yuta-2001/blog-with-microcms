@@ -1,19 +1,6 @@
 import Layout from "../components/layout";
-import Link from 'next/link';
-import { client } from '../libs/client';
 import Image from 'next/image';
 import { Fireworks } from '@fireworks-js/react'
-
-//SSG
-export const getStaticProps = async() => {
-  const data = await client.get({ endpoint: "portfolio" });
-
-  return {
-    props: {
-      portfolio: data.contents,
-    }
-  }
-};
 
 
 export default function Home({ portfolio }) {
