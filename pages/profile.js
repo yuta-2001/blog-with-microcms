@@ -12,7 +12,7 @@ export default function Profile () {
 				<Image src="/profileMv.jpg" width={1280} height={800} quality={100} className="fixed top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 block min-w-min min-h-screen w-screen h-screen z-10" alt="mv" />
 			</div>
 			<main className="w-full bg-black relative z-10 text-white font-serif">
-				<div className="w-5/6 md:w-11/12 lg:w-3/4 mx-auto py-28 md:py-40">
+				<div className="w-5/6 max-w-5xl md:w-11/12 lg:w-3/4 mx-auto py-28 md:py-40">
 					<div className="flex flex-col md:flex-row items-center mb-20">
 						<div className="mb-10 md:mb-0 mr-auto">
 							<h3 className="font-bold mb-12 md:mb-20">
