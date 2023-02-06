@@ -9,13 +9,13 @@ export default function Profile () {
 					PROFILE
 				</h2>
 				<div className="absolute bg-black bg-opacity-60 top-0 left-0 w-full h-full z-20"></div>
-				<Image src="/profileMv.jpg" width={1280} height={800} quality={100} className="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 block min-w-min min-h-screen w-screen h-screen z-10" alt="mv" />
+				<Image src="/profileMv.jpg" width={1280} height={800} quality={100} className="fixed top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 block min-w-min min-h-screen w-screen h-screen z-10" alt="mv" />
 			</div>
 			<main className="w-full bg-black relative z-10 text-white font-serif">
-				<div className="w-3/4 mx-auto py-40">
-					<div className="flex items-center mb-20">
-						<div className="mr-auto">
-							<h3 className="font-bold mb-20">
+				<div className="w-5/6 md:w-11/12 lg:w-3/4 mx-auto py-28 md:py-40">
+					<div className="flex flex-col md:flex-row items-center mb-20">
+						<div className="mb-10 md:mb-0 mr-auto">
+							<h3 className="font-bold mb-12 md:mb-20">
 								<span className="text-5xl mb-4 inline-block tracking-wider">
 									SUGIMINE YUTA
 								</span><br />
@@ -23,14 +23,14 @@ export default function Profile () {
 									STUDENT ENGINNER
 								</span>
 							</h3>
-							<p className="text-xl font-bold text-mono tracking-wider">
+							<p className="md:text-lg lg:text-xl font-bold text-mono tracking-wider">
 								出身：東京都府中市<br />
 								誕生：2002年<br />
 								所属：横浜市立大学国際商学部< br/>
 								趣味：サウナ、サッカー、米津玄師、旅行<br />
 							</p>
 						</div>
-						<Image src="/profileMyImage.jpg" width={250} height={400} quality={100} alt="作者の画像" className="w-96 h-auto block rounded-xl"/>
+						<Image src="/profileMyImage.jpg" width={250} height={400} quality={100} alt="作者の画像" className="w-full md:w-80 lg:w-96 h-auto block rounded-xl"/>
 					</div>
 					<p className="text-lg font-sans">
 						現在文系大学の３年生をしながらWEB系のエンジニアとして活動している者です。<br />
