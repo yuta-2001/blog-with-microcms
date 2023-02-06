@@ -21,6 +21,11 @@ export default function Header () {
 				<nav className="text-lg hidden md:block">
 					<ul className="flex">
 						<li>
+							<Link href="/" className="inline-block p-2 text-white tracking-wide transition-all hover:text-pink-500">
+								HOME
+							</Link>
+						</li>
+						<li className="ml-5">
 							<Link href="/profile" className="inline-block p-2 text-white tracking-wide transition-all hover:text-pink-500">
 								PROFILE
 							</Link>
@@ -56,6 +61,11 @@ export default function Header () {
 					: 'fixed right-[-100%]'
 				}>
 					<ul className="text-center mt-32">
+						<li className="text-center mb-12">
+							<Link href="/" className="text-3xl">
+								HOME
+							</Link>
+						</li>
 						<li className="text-center mb-12">
 							<Link href="/profile" className="text-3xl">
 								PROFILE
