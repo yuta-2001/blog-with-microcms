@@ -13,6 +13,7 @@ export default function Layout({ children, title="MINETECH" }) {
 			<main>
 				{children}
 			</main>
+			
 			<Footer />
 		</div>
 	)
