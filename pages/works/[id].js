@@ -1,5 +1,5 @@
 import { client } from "../../libs/client";
-import styles from "../../styles/Detail.module.scss";
+// import styles from "../../styles/Detail.module.scss";
 
 //SSG
 export const getStaticProps = async (context) => {
