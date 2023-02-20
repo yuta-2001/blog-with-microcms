@@ -1,5 +1,7 @@
 import { client } from "../../libs/client";
 import styles from "../../styles/Detail.module.scss";
+import Layout from "../../components/layout";
+import Image from "next/image";
 
 //SSG
 export const getStaticProps = async (context) => {
@@ -25,11 +27,23 @@ export const getStaticPaths = async () => {
 
 export default function WorkId({ work }) {
 	return (
-		<main className={styles.main}>
-			<h1 className={styles.name}>{work.name}</h1>
-			<div className={styles.content} dangerouslySetInnerHTML={{ __html: `${work.description}` }}></div>
-			<span className={styles.publishedAt}>{work.publishedAt}</span>
-		</main>
+		<Layout>
+			<div class={styles.top}>
+				<h2 class={styles.topTitle}>
+					{work.name}<br />
+					<span class={styles.topTitleSub}>
+						{work.category.name}
+					</span>
+				</h2>
+				<Image src={work.img.url} width={1280} height={800} quality={100} alt={`${work.name}のサムネイル`} className={styles.topImage} />
+			</div>
+			<main className={styles.main}>
+				<div className={styles.mainContainer}>
+					<div className={styles.content} dangerouslySetInnerHTML={{ __html: `${work.description}` }}></div>
+					<span className={styles.publishedAt}>{work.publishedAt}</span>
+				</div>
+			</main>
+		</Layout>
 	)
 }
 
