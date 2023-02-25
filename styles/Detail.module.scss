@@ -1,3 +1,16 @@
+$breakpoint: (
+  sm: "screen and (max-width: 520px)",
+  md: "screen and (max-width: 960px)",
+  lg: "screen and (max-width: 1200px)",
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
+
 .top {
 	background-color: black;
 	padding: 10rem 0 5rem;
@@ -12,7 +25,7 @@
 		margin-bottom: 5rem;
 
 		&Sub {
-			font-size: 1rem;
+			font-size: 1.5rem;
 
 		}
 
@@ -21,6 +34,7 @@
 	&Image {
 		width: 75%;
 		margin: 0 auto;
+        border-radius: 10px;
 
 	}
 }

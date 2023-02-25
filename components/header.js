@@ -37,12 +37,7 @@ export default function Header () {
 						</li>
 						<li className="ml-5">
 							<a href="https://www.yupro.tech/" target="_blank" rel="noopener" className="inline-block p-2 text-white tracking-wide transition-all hover:text-pink-500">
-								TECHBLOG
-							</a>
-						</li>
-						<li className="ml-5">
-							<a href="https://www.yupro.tech/contact/" target="_blank" rel="noopener" className="inline-block p-2 text-white tracking-wide transition-all hover:text-pink-500">
-								CONTACT
+								BLOG
 							</a>
 						</li>
 					</ul>
