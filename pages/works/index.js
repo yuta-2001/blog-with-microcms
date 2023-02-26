@@ -21,7 +21,7 @@ export default function Works({works}) {
 	return (
 		<Layout>
 			<main className="bg-black w-full text-white font-serif py-48">
-				<h2 className="font-serif text-center text-6xl tracking-widest mb-6 font-bold">
+				<h2 className="font-serif text-center text-6xl tracking-widest mb-8 font-bold">
 					Works
 				</h2>
 				<p className="font-serif text-center tracking-widest text-xl mb-28">
