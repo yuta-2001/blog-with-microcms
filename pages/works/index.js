@@ -27,7 +27,7 @@ export default function Works({works}) {
 				<p className="font-serif text-center tracking-widest text-xl mb-28">
 					I will introduce the works I have made so far and the products I have been involved in.
 				</p>
-				<ul className="flex flex-wrap w-11/12 max-w-6xl items-center justify-between mx-auto">
+				{/* <ul className="flex flex-wrap w-11/12 max-w-6xl items-center justify-between mx-auto">
 					{works.map((work) => (
 						<li key={work.id} className="block w-1/2 rounded-lg max-w-lg text-black">
 							<Link href={`/works/${work.id}`} className="block w-full h-full transition-all bg-white rounded-lg hover:opacity-70">
@@ -43,7 +43,10 @@ export default function Works({works}) {
 							</Link>
 						</li>
 					))}
-				</ul>
+				</ul> */}
+                <p className="text-center text-xl font-bold">
+                    準備中です。。。。。
+                </p>
 			</main>
 		</Layout>
 	)
